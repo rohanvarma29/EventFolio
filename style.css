@@ -8,11 +8,21 @@
     color: white;
 }
 .main{
-    background-color: bisque;
     height: 800px;
+    margin: 100px 100px 100px 100px;
 }
 .footer{
     background-color: darkcyan;
     height: 100px;
+    color: white;
+}
+.connection-main{
+    height: 800px;
+}
+
+.user-nav-btn{
+    background-color: darkcyan;
+}
+#new-connection-btn{
     color: white;
 }
