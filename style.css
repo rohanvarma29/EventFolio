@@ -1,0 +1,18 @@
+.custom-row{
+    background-color: darkcyan;
+    color: white;
+    height: 50px;
+}
+#option{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    background-color: bisque;
+    height: 800px;
+}
+.footer{
+    background-color: darkcyan;
+    height: 100px;
+    color: white;
+}
