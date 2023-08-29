@@ -8,12 +8,13 @@
     color: white;
 }
 .main{
-    height: 800px;
-    margin: 100px 100px 100px 100px;
+    margin: 50px 100px 50px 100px;
 }
 .footer{
+    position: relative;
+    top: 120px;
     background-color: darkcyan;
-    height: 100px;
+    height: 75px;
     color: white;
 }
 .connection-main{
@@ -25,4 +26,9 @@
 }
 #new-connection-btn{
     color: white;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
 }
