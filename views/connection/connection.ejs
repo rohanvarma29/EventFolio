@@ -12,13 +12,13 @@
             </div>
         </div>
         <div class="event-Details">
-            <div ><img class="event-img" src="<%=connection.image%>" alt=""></div>
+            <div ><img class="event-img" src="<%=connection.imageURL%>" alt=""></div>
             <div class="info">
                 <div>
-                    <p style="font-weight: bold;font-size: large;">Hosted by <%= connection.host%></p>
-                    <p>Date: <%=connection.when%></p>
-                    <p>Time: <%=connection.start%> to <%= connection.end %></p>
-                    <p>Venue: <%=connection.where%></p>
+                    <p style="font-weight: bold;font-size: large;">Hosted by <%= connection.hostName%></p>
+                    <p>Date: <%=connection.date%></p>
+                    <p>Time: <%=connection.startTime%> to <%= connection.endTime %></p>
+                    <p>Venue: <%=connection.place%></p>
                 </div>
             </div>
         </div>

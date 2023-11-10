@@ -4,11 +4,22 @@ const morgan = require('morgan');
 const connectionRoutes = require('./routes/connectionRoutes');
 const mainRoutes = require('./routes/mainRoutes');
 const methodOverride = require('method-override');
+const mongoose = require('mongoose');
 
 //configure app
 const app=express();
 let port=8080;
 let host='localhost';
+let url = 'mongodb://localhost:27017/NBAD';
+
+//connect to MongoDB
+mongoose.connect(url)
+.then(()=>{
+    //start the server
+    app.listen(port,host);
+    console.log('app is running at port',port);
+})
+.catch(err=>console.log(err.message));
 
 app.set('view engine','ejs');
 
@@ -40,6 +51,3 @@ app.use((err,req,res,next)=>{
     res.render('error',{error: err});
 });
 
-//start the server
-app.listen(port,host);
-console.log('app is running at port',port);
