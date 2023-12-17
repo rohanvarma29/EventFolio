@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const connectionSchema = new Schema({
     topic: {type: String, required: [true, 'topic is required']},
     title: {type: String, required: [true, 'title is required']},
-    hostName: {type: String, required: [true, 'host name is required']},
+    hostName: {type: Schema.Types.ObjectId, ref: 'User'},
     details: {type: String, required: [true, 'details is required']},
     place: {type: String, required: [true, 'place is required']},
     date: {type: String, required: [true, 'date is required']},
