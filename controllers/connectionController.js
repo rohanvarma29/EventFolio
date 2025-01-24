@@ -31,7 +31,7 @@ exports.show = (req,res,next)=>{
       ])
     .then((results)=>{
         const [connection, rsvps] = results;
-        console.log(rsvps);
+        //console.log(rsvps);
         if(connection){
             //console.log(connection.id);
             let isAuthor = req.session.user == connection.hostName._id;

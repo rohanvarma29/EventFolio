@@ -49,6 +49,16 @@ body{
     color: white;
 }
 
+#make-an-offer-btn{
+    background-color: purple;
+    color: white;
+}
+
+#make-an-offer-btn:hover{
+    background-color: rgb(154, 67, 154);
+    border: black solid 1px;
+}
+
 #nav-bar{
     position: sticky;
     top: 0;

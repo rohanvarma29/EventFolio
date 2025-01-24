@@ -32,6 +32,10 @@
                     <p>Date: <%=connection.date%></p>
                     <p>Time: <%=connection.startTime%> to <%= connection.endTime %></p>
                     <p>Venue: <%=connection.place%></p>
+                    <form action="/offers/<%=connection.id%>" method="POST" class="offer">
+                        <input type="number" name="amount" placeholder="$Enter your offer">
+                        <button class="btn" id="make-an-offer-btn" type="submit" >Make an offer</button>
+                    </form>
                 </div>
             </div>
         </div>
