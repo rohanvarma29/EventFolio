@@ -21,6 +21,9 @@ body{
 }
 .footer{
     background-color: darkcyan;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 75px;
     color: white;
 }

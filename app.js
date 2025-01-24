@@ -16,7 +16,7 @@ const app=express();
 //configure app
 let port=8080;
 let host='localhost';
-let url = 'mongodb://localhost:27017/NBAD';
+let url = 'mongodb+srv://demo:Dragon%403612@cluster0.mrsabrw.mongodb.net/NBAD?retryWrites=true&w=majority&appName=Cluster0';
 
 //connect to MongoDB
 mongoose.connect(url)
@@ -35,7 +35,7 @@ app.use(
         secret: "ajfeirf90aeu9eroejfoefj",
         resave: false,
         saveUninitialized: false,
-        store: new MongoStore({mongoUrl: 'mongodb://localhost:27017/NBAD'}),
+        store: new MongoStore({mongoUrl: url}),
         cookie: {maxAge: 60*60*1000}
         })
 );
